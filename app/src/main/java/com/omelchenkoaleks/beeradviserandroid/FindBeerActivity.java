@@ -30,10 +30,8 @@ public class FindBeerActivity extends Activity {
         // получаем вариант, выбранный в Spinner
         String beerType = String.valueOf(color.getSelectedItem());
 
-        // выводим выбранный вариант -
-        // brands.setText(beerType);
-
         // получаем контейнер List с сортами пива
+        // или получаем рекомендации от класса BeerExpert
         List<String> brandList = expert.getBrands(beerType);
         // построим String по данным из List
         StringBuilder brandFormatted = new StringBuilder();
